@@ -8,7 +8,7 @@ python3 -m venv <name>
 source <name>/bin/activate
 ```
 ```shell
-python3 -r requirements.txt
+python3 install -r requirements.txt
 ```
 ```shell
 python3 manage.py runserver
