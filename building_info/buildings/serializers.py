@@ -7,7 +7,7 @@ class EntranceSerializer(serializers.ModelSerializer):
         fields = ['id', 'organization', 'latitude', 'longitude']
 
 class OrganizationSerializer(serializers.ModelSerializer):
-    entrances = EntranceSerializer(many=True, read_only=True)  # Входы связаны с организацией
+    entrances = EntranceSerializer(many=True, read_only=True) 
 
     class Meta:
         model = Organization

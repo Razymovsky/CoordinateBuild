@@ -1,23 +1,3 @@
-'''from django.db import models
-
-# Create your models here.
-
-class Organization(models.Model):
-    name = models.CharField(max_length=255)
-    street = models.CharField(max_length=255)
-    house_number = models.CharField(max_length=10)
-
-    def __str__(self):
-        return f"{self.name} - {self.street} {self.house_number}"
-
-class Entrance(models.Model):
-    organization = models.ForeignKey(Organization, related_name="entrances", on_delete=models.CASCADE)
-    latitude = models.FloatField()
-    longitude = models.FloatField()
-
-    def __str__(self):
-        return f"Entrance at {self.latitude}, {self.longitude}"
-        '''
 from django.db import models
 
 class Organization(models.Model):

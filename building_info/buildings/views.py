@@ -9,8 +9,8 @@ from .filters import OrganizationFilter
 class OrganizationViewSet(viewsets.ModelViewSet):
     queryset = Organization.objects.all()
     serializer_class = OrganizationSerializer
-    filter_backends = (DjangoFilterBackend, SearchFilter)  # Добавляем поддержку фильтрации и поиска
-    filterset_class = OrganizationFilter  # Указываем фильтр
+    filter_backends = (DjangoFilterBackend, SearchFilter)  
+    filterset_class = OrganizationFilter  
     search_fields = ['name', 'street', 'house_number']
     permission_classes = [AllowAny]
 
